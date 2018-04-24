@@ -48,11 +48,11 @@ noise_ax = 9;
 noise_ay = 9;
 ```  
 
-Sensor type| laser | radar| laser&radar |
---- | --- | --- |
-RMSE(px)| 0.1226 | 0.1869 | 0.0959
-RMSE(py)| 0.0980 | 0.2795 | 0.0849
-RMSE(vx)| 0.5632 | 0.5228 | 0.3881
-RMSE(vy)| 0.4433 | 0.6599 | 0.4289
+| Sensor type| laser  | radar  | laser&radar |
+| ---------- | ------ | ------ | ----------- | 
+| RMSE(px)   | 0.1226 | 0.1869 | 0.0959      |
+| RMSE(py)   | 0.0980 | 0.2795 | 0.0849      | 
+| RMSE(vx)   | 0.5632 | 0.5228 | 0.3881      |
+| RMSE(vy)   | 0.4433 | 0.6599 | 0.4289      |
 
 In general, using only laser sensor readings provides more accurate estimations than using only radar sensor readings. Fusing the two sensors' readings has much improved the accuracies on position estimations and velocity estimations.
