@@ -7,6 +7,9 @@ build/
 # editor config
 .vscode/
 
+# python 
+.ipynb_checkpoints/
+
 # Xcode
 *.pbxuser
 !default.pbxuser
