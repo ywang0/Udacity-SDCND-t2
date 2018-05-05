@@ -30,7 +30,7 @@ $ ./UnscentedKF <your-file-path>
 
 For consecutive runs, remember to exit (`ctrl-c`) the program to refresh RMSE values, and click `Restart` button on the simulator.  
 
-Check this [notebook](../UKF_visualization.ipynb) for the filter performance visualization.
+Check `UKF_visualization.ipynb` for the filter performance visualization.
 
 ### Compare performance: UKF with CTRV (Constant Turn Rate Velocity) model v.s. [EKF with constant velocity model](https://github.com/ywang0/Udacity-SDCND-t2/tree/master/CarND-Extended-Kalman-Filter-Project)
 
