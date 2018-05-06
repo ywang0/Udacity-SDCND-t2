@@ -64,8 +64,23 @@ public:
   ///* Augmented state dimension
   int n_aug_;
 
+  ///* Measurement space dimension for laser
+  int n_z_laser_;
+
+  ///* Measurement space dimension for radar
+  int n_z_radar_;
+
   ///* Sigma point spreading parameter
   double lambda_;
+
+  ///* Laser measurement space mapping matrix
+  MatrixXd H_laser_;
+
+  ///* Laser measurement noise covariance matrix
+  MatrixXd R_laser_;
+
+  ///* Radar measurement noise covariance matrix
+  MatrixXd R_radar_;
 
   ///* Normalized Innovation Squared (NIS) for laser
   double NIS_laser_;
@@ -83,6 +98,12 @@ public:
    * Destructor
    */
   virtual ~UKF();
+
+  /**
+   * InitValues
+   * @param meas_package The first measurement data of either radar or laser
+   */
+  void InitValues(const MeasurementPackage meas_package);
 
   /**
    * ProcessMeasurement
